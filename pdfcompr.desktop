@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/pdf
+Actions=PDFcompr
+
+[Desktop Action PDFcompr]
+Name= PDF compress
+Name[de]=PDF komprimieren
+Exec=pdfcompr %u
+Icon=applications-development
