@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+mv $1~~ $1~~~
+mv $1~ $1~~
+mv $1 $1~
+
+gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -sOutputFile=$1 $1~
+
+touch --reference=$1~ $1
+
+exit
