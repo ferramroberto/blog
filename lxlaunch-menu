@@ -1,0 +1,15 @@
+#!/bin/sh
+SERVICE=’lxlauncher’
+if ps ax | grep -v grep | grep $SERVICE > /dev/null
+then
+pkill lxlauncher &&
+wmctrl -k off &
+else
+wmctrl -k on &
+lxlauncher &
+#uncomment the following line for some transperency without a compositor.
+#transset -n lxlauncher .65 &
+sleep 60 &&
+pkill lxlauncher &&
+wmctrl -k off &
+fi
