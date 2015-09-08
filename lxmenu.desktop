@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=LXappMenu
+Comment=Menu For LXDE
+Icon=/usr/share/icons/gnome/256x256/devices/video-display.png
+Exec=bash lxlaunch-menu
+Terminal=false
+StartupNotify=false
+Categories=System
